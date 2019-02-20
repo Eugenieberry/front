@@ -12,13 +12,14 @@ date_default_timezone_set('Europe/Paris');
 
 include_once "./includes/html.php";
 include_once "./includes/header.php";
+include_once "./pages/contact.php";
 
 
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
 }
 else {
-    $page = "accueil";include_once "./pages/contact.php";
+    $page = "accueil";
 }
 $path = "./includes/";
 $contenu = glob($path . "*.inc.php");
